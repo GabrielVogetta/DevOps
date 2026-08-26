@@ -1,8 +1,5 @@
 name: Continuous Integration
-on: 
-  push:
-    branches:
-      - criacao-ci
+on: [push, pull_request]
 
 jobs:
   test:
