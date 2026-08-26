@@ -1,17 +1,13 @@
 name: Continuous Integration
-on:
-  pull_request:
-    branches:
-      - main
-
-permissions:
-  contents: read
-  security-events: write
+on: [push, pull_request]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: advanced-security/python-lint-code-scanning-action@v1
-        with:
-          linter: flake8
+      - name: Roda um comando!
+        run: echo $(pwd)
+
+      - name: Roda outro comando!
+        run: echo $(ls)
