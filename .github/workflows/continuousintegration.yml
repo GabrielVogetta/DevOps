@@ -14,3 +14,8 @@ jobs:
         with:
           python-version: '3.13'
 
+      - name: Verificar código
+        uses: advanced-security/python-lint-code-scanning-action@v1
+        with:
+          linter: Pylint
+
