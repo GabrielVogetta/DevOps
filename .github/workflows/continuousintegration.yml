@@ -7,7 +7,7 @@ jobs:
 
     permissions:
       security-events: write # Permissão obrigatória para upload de SARIF
-      actions: read          # Permissão para ler informações do workflow
+      # actions: read          # Permissão para ler informações do workflow
 
     steps:
       - name: Checkout code
