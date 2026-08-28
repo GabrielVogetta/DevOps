@@ -6,8 +6,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Copia os arquivos do repo
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v7
+      
+      - name: Instalar o python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
 
-      - name: Roda outro comando!
-        run: echo $(ls)
