@@ -5,10 +5,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    permissions:
-      security-events: write # Permissão obrigatória para upload de SARIF
-      # actions: read          # Permissão para ler informações do workflow
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
