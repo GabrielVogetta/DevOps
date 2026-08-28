@@ -17,5 +17,5 @@ jobs:
       - name: Verificar código
         uses: advanced-security/python-lint-code-scanning-action@v1
         with:
-          linter: Pylint
+          linter: pylint
 
